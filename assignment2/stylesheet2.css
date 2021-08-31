@@ -1,0 +1,45 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+    gap: 50px;
+    grid-auto-rows: 100px;
+}
+
+div{
+    background-color: red;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 25px;
+    
+}
+
+#one{
+    grid-column: 1/5;
+    grid-row: 1;
+    float: left;
+}
+#two{
+    grid-column: 1;
+    grid-row: 2/3;
+    float: right;
+}
+#three{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    float: left;
+}
+#four{
+    grid-column: 5;
+    grid-row: 2/3;
+    float: right;
+}
+#five{
+    grid-column: 1/5;
+    grid-row: 4;
+    float: left;
+}
